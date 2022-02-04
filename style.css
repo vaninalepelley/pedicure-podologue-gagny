@@ -1,0 +1,948 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+/* html {
+    font-size: 100%;
+} */
+body{
+    padding: 0 2%;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* *************************Barre de navigation (commun à tous)******************************** */
+
+nav{
+   display:flex; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   background-color:white;
+   position :sticky;
+   top: 0;
+   z-index:98;
+}
+nav .profil{
+    display:flex;
+    align-items: center;
+}
+nav .profil img{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+nav .profil h1{
+    font-size:15px;
+    margin-left: 10px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 40px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+nav a{
+    color: black;
+}
+
+/* *************************Code commun à toutes les pages******************************** */
+
+.box{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 30px 0px;
+}
+.box h1{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4vw;
+    letter-spacing:5px;
+    width:100%;
+}
+.box h4{
+    color:lightgrey;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 4vw;
+}
+.box h2{
+    margin: 5vh;
+    font-size: 5vh;
+    line-height:6vh;
+}
+.box .text{
+    margin: 1vh 1vw;
+    text-align:justify;
+    font-size: 2.5vh;
+    letter-spacing: 0.05vw;
+    line-height: 3vh;
+}
+.box span{
+    font-size:bolder;
+    text-decoration:underline;
+}
+.box .text a:hover{
+    color:lightgrey;
+    Font-size:1.1em;
+}
+.box .champ{
+    display:flex;
+    align-items:baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+/* ************************* Animations******************************** */
+
+.box1 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box2 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box3 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_soin_1 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_soin_2 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_soin_3 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_soin_4 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_rdv_1 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_rdv_2 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.box_rdv_3 {
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.fade-in {
+    opacity:1;
+}
+
+/* *************************  PAGE ACCUEIL  ******************************** */
+
+
+/* Accueil : Message de Bienvenue */
+.img0{
+    padding-top: 5%;
+    background: url('Images/Photo_Principale.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.telephone{
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background:transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:3vw;
+    font-weight:bold;
+    width:100%;
+}
+
+.telephone:hover{
+    color:lightgrey;
+}
+.telephone i{
+    margin-right:1vw;
+}
+
+.telephone a{
+    margin-left: 1vw;
+    color: black;
+}
+.telephone a:hover{
+    color: lightgrey;
+}
+
+
+/* Accueil : section 1 - Soins et Traitements */
+
+.img1 {
+    background: url('images/Pied_1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.soin{
+    width: 30%;
+    margin-top:1%;
+}
+.soin h4{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 5% 10%;
+    font-size: 2vh;
+    line-height: 3vh;
+    letter-spacing: 0.1vw;
+}
+.soin img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 100%;
+}
+.soin img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+
+.discover{
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-top: 4vh;
+    padding: 4vh;
+    width: 40vh;
+    font-size: 3vh;
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+}
+
+.discover:hover{
+    transition: all 0.6s ease-in;
+    background: rgba(255,255,255,0.9);
+    color: black;
+}
+
+
+/* Accueil : section 2 - Rendez-Vous */
+
+.img2 {
+    background: url('images/Pied_2.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.RdV{
+    width: 50%;
+    margin-top:1%;
+}
+.RdV h4{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 3% 5% 3% 5%;
+    font-size: 2vh;
+    line-height: 3vh;
+    letter-spacing: 0.1vw;
+}
+
+.RdV img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 70%;
+}
+.RdV img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+
+
+/* Accueil : section 3 - A propos */
+
+.img3 {
+    background: url('images/Pied_3.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.apropos{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5vh 2.5vw;
+}
+
+.apropos img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 15%;
+    margin-top:2%;
+}
+.apropos .text{
+    width: 80%;
+    margin: 0%;
+
+}
+
+/* *************************  PAGE SOINS  ******************************** */
+
+
+/* Soins : Sommaire */
+.sommaire {
+    padding-top: 5%;
+    background:url('images/Soin_0_Traitements.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sommaire ul{
+    list-style-type: none;
+    text-align:center;
+    padding:0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    font-size: 4vh;
+    letter-spacing: 0.4vw;
+    line-height: 8vh;
+    }
+
+.sommaire ul li{
+    color: white;
+}
+
+.sommaire a{
+    color: white;
+}
+.sommaire a:hover{
+    color: black;
+}
+
+
+/* Soins : Section 1 - Soins des pieds */
+.img_soin_1 {
+    background:url('images/Pied_8.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.maladie{
+    width: 20%;
+    margin-top:2%;
+}
+.maladie img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 90%;
+}
+.maladie p{
+    text-align:center;
+    font-size: 1.4vh;
+    letter-spacing: 0.1vw;
+    line-height:1.4vh;
+    padding:0;
+}
+
+
+/* Soins : Section 2 - Semelles Orthopédiques */
+.img_soin_2 {
+    background:url('images/Pied_6.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.orthese{
+    width: 45%;
+    margin-top:2%;
+}
+.orthese img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 50%;
+}
+.orthese p{
+    text-align:center;
+    font-size: 1.4vh;
+    letter-spacing: 0.1vw;
+    padding:0;
+}
+
+/* Soins : Section 3 - Réflexologie Plantaire */
+.img_soin_3 {
+    background:url('images/Soin_2.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.reflexo{
+    width: 45%;
+    margin-top:2%;
+}
+.reflexo img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 50%;
+}
+.reflexo p{
+    text-align:center;
+    font-size: 1.4vh;
+    letter-spacing: 0.1vw;
+    padding:0;
+}
+
+
+/* Soins : Section 4 - Et pour les sportifs... */
+.img_soin_4 {
+    background:url('images/Soin_13_Diabete.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sportif{
+    width: 30%;
+    margin-top:2%;
+}
+.sportif img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    width: 90%;
+}
+.sportif p{
+    text-align:center;
+    font-size: 1.4vh;
+    letter-spacing: 0.1vw;
+    padding:0;
+}
+
+
+
+/* *************************  PAGE RENDEZ-VOUS  ******************************** */
+
+
+/* Rendez-Vous Sommaire */
+
+.rdv_sommaire {
+    padding-top: 5%;
+    background:url('images/RdV_1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.rdv_sommaire ul{
+    list-style-type: none;
+    text-align:center;
+    padding:0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    font-size: 4vh;
+    letter-spacing: 0.4vw;
+    line-height: 8vh;
+}
+
+.rdv_sommaire ul li{
+    color: white;
+}
+
+.rdv_sommaire a{
+    color: white;
+}
+.rdv_sommaire a:hover{
+    color: black;
+}
+
+
+/* Rendez-Vous Section 1 : Horaires des Consultations */
+
+.img_rdv_1 {
+    background:url('images/RdV_2.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.tableau{
+    display:flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5vh;
+}
+.texte1{
+    width: 50%;
+}
+.tableau .text{
+    width: 100%;
+    text-align: left;
+}
+.image1{
+    width: 50%;
+}
+
+#calendar {
+    width:90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+#calendar:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+} 
+
+
+/* Rendez-Vous Section 2 : Venir au Cabinet */
+.img_rdv_2 {
+    background:url('images/RdV_3.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#gare{
+    background: url(images/rdv_gare_lr.jpg);
+    background-size: cover;
+}
+#bus{
+    background: url(images/rdv_bus_lr.jpg);
+    background-size: cover;
+}
+#pharmacie{
+    background: url(images/rdv_pharmacie_lr.jpg);
+    background-size: cover;
+}
+
+.texte2{
+    width: 40%;
+
+    align-items: center;
+    margin: 1vh 1vw;
+}
+.texte2 li{
+    margin-bottom: 3%;
+    width:51%;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(10,10,10,0);
+}
+.texte2 p{
+    background-color: transparent;
+    border:1px white solid;
+    color: white;
+    font-size: 0.9vw;
+    letter-spacing: 0.09vw;
+    float: right;
+    width: 100%;
+    margin: 13% -110% 13% -110%;
+    padding: 1% 2.5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+
+.image2{
+    width: 50%;
+}
+
+#map {
+    width:90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+
+#map:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+
+
+/* Rendez-Vous Section 3 : Tarifs et Remboursements */
+.img_rdv_3 {
+    background:url('images/rdv_carte_vitale.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.texte3{
+    width: 50%;
+    text-align: left;
+}
+.image3{
+    width: 50%;
+}
+.image3 a{
+    margin: 1% 2.5%;
+}
+#tarifs {
+    width:90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+#tarifs:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+
+
+/* Rendez-Vous Section 4 : Préparer votre venue... */
+.img_rdv_4 {
+    background:url('images/Soin_2.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.texte4{
+    width: 50%;
+    text-align: left;
+}
+.image4{
+    width: 50%;
+}
+.image4 a{
+    margin: 1% 2.5%;
+}
+#poeme {
+    width:90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+#poeme:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+
+
+/* *************************  PIED DE PAGE (commun à tous)  ******************************** */
+
+.footer{
+    display: flex;
+    margin-bottom: 1vh;
+    padding: 0;
+    font-size: 0.8vw;
+}
+.Copyright{
+    width: 50%;
+    text-align: left;
+    color: black;
+}
+.Legal{
+    width: 50%;
+    text-align: right;
+    color: black;
+}
+
+.mentions{
+    cursor: pointer;
+}
+.mentions:hover{
+    text-decoration:underline;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 5% auto;
+    width: 65%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 2vh;
+    letter-spacing: 0.05vw;
+    
+  }
+
+ .modal-footer h3 {
+    margin: 0;
+    font-size: 2vh;
+    letter-spacing: 0.05vw;
+  }
+  
+  .modal-header {
+    background: silver;
+    padding: 1vw;
+    color: white;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: silver;
+    padding: 1vw;
+    color: white;
+    text-align: left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    float:right;
+    font-size: 2vh;
+    color: white;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+  /* *************************Page Travaux******************************** */
+
+.travaux {
+    padding-top: 5%;
+    background:url('images/Travaux1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* *************************  AFFICHAGE SUR MOBILE  ******************************** */
+
+@media screen and (max-width: 700px){
+    
+    /* html {
+        font-size: 100%;
+    } */
+
+    /* barre de navigation sur mobile */
+    nav{
+        justify-content: center;
+    }
+    nav .profil h1{
+        font-size:13px;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    /* Box ScrollMagic : Resizing sur mobile */
+    .box h2{
+        margin: 5%;
+        font-size: 4vh;
+        line-height:5vh;
+    }
+    .box .text{
+        font-size: 1.6vh;
+        letter-spacing:0.04vw;
+        line-height:2.4vh;
+    }
+
+    /* Accueil : Resizing sur mobile */
+    .telephone{
+        font-size:5vw;
+    }
+    .apropos img{
+        width: 33%;
+        margin-top:2%;
+    }
+    .apropos .text{
+        width: 100%;
+        margin: 2%;
+    }
+    .discover{
+        width: 30vh;
+    }
+
+    /* Soins et Traitements: Resizing sur mobile */
+    .sommaire ul{
+        font-size: 3.5vh;
+        line-height:5vh;
+    }
+
+    /* Rendez-Vous : Resizing sur mobile */
+    .rdv_sommaire ul{
+        font-size: 3.5vh;
+        line-height:5vh;
+    }
+    .tableau{
+        align-items:center;
+    }
+    .tableau .text{
+        width: 100%;
+        text-align: justify;
+        margin:0% 5% 5% 5%;
+    }
+    
+    .texte1{
+        width: 90%;
+        text-align: center;
+        margin:0%;
+    }
+    .image1{
+        width:90%;
+    }
+    .image1 a{
+        width:80%;
+        text-align: center;
+    }
+    #calendar {
+        margin:3% 10% 3% 10%;
+    }
+
+    .texte2{
+        width: 90%;
+        text-align: center;
+        margin:0%;
+    }
+    .texte2 ul{
+        width:80%;
+    }
+    .texte2 p{
+        font-size: 1.6vh;
+        letter-spacing:0.04vw;
+        line-height:2.4vh;
+    }
+    .image2{
+        width:90%;
+    }
+    .image2 a{
+        width:80%;
+        text-align: center;
+    }
+    #map {
+        margin:3% 10% 3% 10%;
+    }
+
+    .texte3{
+        width: 90%;
+        text-align: center;
+        margin:0%;
+    }
+    .image3{
+        width:90%;
+    }
+    .image3 a{
+        width:80%;
+        text-align: center;
+    }
+    #tarifs {
+        margin:3% 10% 3% 10%;
+    }
+
+    .texte4{
+        width: 90%;
+        text-align: center;
+        margin:0%;
+    }
+    .image4{
+        width:90%;
+    }
+    .image4 a{
+        width:80%;
+        text-align: center;
+    }
+    #poeme {
+        margin:3% 10% 3% 10%;
+    }
+
+    /* Bas de Page sur mobile */
+    .footer{
+        font-size: 10px;
+    }
+
+    /* Pop-up Mentions Légales sur Mobile */
+    .modal-content {
+        margin: 10% auto;
+        width: 90%;
+    }
+}
