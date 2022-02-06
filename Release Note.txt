@@ -1,0 +1,25 @@
+webmaster: LEPELLEY
+
+
+V1.01
+* Ajout de formulaire de contact
+* Correctifs mineurs vue mobile responsive
+* Mise à jour CGU 1.01 avec adresse du site et hébergeur(vaninalepelley.github.io/pedicure-podologue-gagny)
+
+
+*******************************
+
+V1.00
+Initial release of website "cabinet de podologie à Gagny - Vanina Lepelley"
+* ScrollMagic
+* Accueil: Bienvenue - Traitements & Soins - Rendez-Vous
+* Traitements & Soins: Sommaire - Soins des Pieds - Semelles Orthopédiques - Réflexologie - Pour les Sportifs
+* Rendez-Vous: Sommaire - Prendre RdV (horaires) - Aller au Cabinet (adresse) - Tarifs & Remboursements - Préparer votre venue
+
+
+*******************************
+
+Cahier des Charges
+Static site (html/css/js, no php/mySQL)
+Public site
+Protected from spam

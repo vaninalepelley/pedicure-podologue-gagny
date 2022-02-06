@@ -69,7 +69,7 @@
                             <a href="soins.html#Soin_3"target="_blank"><img src="images/Pied_10.jpg" alt="soin réflexologie plantaire" /></a>
                         </div> 
                     </div>
-                    <a href="soins.html"><button class="discover"> En savoir plus</button></a>
+                    <a href="soins.html"target="_blank"><button class="discover"> En savoir plus</button></a>
                 </div>
             </div>
         </section>
@@ -94,7 +94,7 @@
                             <a href="rdv.html#RdV_2"target="_blank"><img src="images/Adresse3.jpg" alt="Adresse du cabinet" /></a>
                         </div>
                     </div>
-                    <a href="rdv.html"><button class="discover"> En savoir plus</button></a>
+                    <a href="rdv.html"target="_blank"><button class="discover"> En savoir plus</button></a>
                 </div>
             </div>
         </section>
@@ -113,18 +113,62 @@
                     <div class="apropos">
                         <img src="images/facebook4_2.jpg" alt="Photo Vanina dans son cabinet" />
                         <div class="text">
-                            Vanina LEPELLEY exerce depuis 2009. Elle est diplômée de l'école ESMKP (Ecole Supérieure de Pedicures Podologues de Paris) et a suivi une formation complémentaire en réflexologie plantaire. Elle est inscrite à l'Ordre National des Pédicures-Podologues sous le numéro 119313028 et est conventionnée. Agrément petit appareillage. <br />                    
+                            Vanina LEPELLEY exerce depuis 2009. Elle est diplômée de l'école ESMKP (Ecole Supérieure de Pedicures Podologues de Paris) et a suivi une formation complémentaire en réflexologie plantaire. Elle est inscrite à l'Ordre National des Pédicures-Podologues sous le numéro 119313028 et est conventionnée. Agrément petit appareillage. <br />
+                            <br />   <span id="modal-contact-me" class="contact"> Contactez-moi</span>      
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <!--Pop-up : Formulaire de contact -->
+        <div id="my-modal2" class="modal2">
+            <div class="modal2-content">
+              <div class="modal2-header">
+                <span class="close2">&times;</span>
+                <h4>Formulaire de Contact</h4>
+              </div>
+              <div class="modal2-body">
+                    <div class="container">
+                        <form id="test-form" action="https://formspree.io/f/xjvlypav" method="POST">
+
+                        <div class="form-group">
+                          <label for="firstName">Prénom</label>
+                          <input type="text" id="firstName" name="firstName">
+                        </div>
+                
+                        <div class="form-group">
+                          <label for="Name">Nom</label>
+                          <input type="text" id="Name" name="Name">
+                        </div>
+                
+                        <div class="form-group">
+                          <label for="email">E-mail</label>
+                          <input type="email" id="email" name="Email">
+                        </div>
+                
+                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea name="message" id="message" rows="5" maxlength="200">Note: Ce formulaire ne permet pas de prendre rendez-vous</textarea>
+                        </div>
+                
+                        <button type="submit" id="test-form-submit">Envoyer</button>
+                      </form>
+                    </div>
+                    <div id="status"></div>
+              </div>
+              <div class="modal2-footer">
+                <h5></h5>
+              </div>
+            </div>
+        </div>           
+
         <!--Bas de page-->
         <footer>
             <div class="footer">
                 <div class="Copyright">
-                    © LEPELLEY 2022 v1.00
+                    © LEPELLEY 2022 v1.01
                 </div>
                 <div class="Legal">
                     <span id="modal-mentions-legales" class="mentions"> mentions légales</span>
@@ -133,16 +177,16 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <span class="close">&times;</span>
-                            <h2>Mentions Légales</h2>
+                            <h4>Conditions Générales d'Utilisation V1.01</h4>
                           </div>
                           <div class="modal-body">
-                            <embed src="images/CGU-V1.00.pdf#toolbar=0" frameborder="0" width="100%" height="600px">
+                            <embed src="images/CGU-V1.01.pdf#toolbar=0" type="application/pdf" frameborder="0" width="100%" height="600px">
                           </div>
                           <div class="modal-footer">
-                            <h3>Conditions Générales d'Utilisation V1.00</h3>
+                            <h5></h5>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </footer>
