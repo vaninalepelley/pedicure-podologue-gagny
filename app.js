@@ -151,6 +151,7 @@ function outsideClick(e) {
 const modal2 = document.querySelector('#my-modal2');
 const modalBtn2 = document.querySelector('#modal-contact-me');
 const closeBtn2 = document.querySelector('.close2');
+var form = document.getElementById("test-form");
 
 // Events
 modalBtn2.addEventListener('click', openModal2);
@@ -165,6 +166,7 @@ function openModal2() {
 // Close
 function closeModal2() {
   modal2.style.display = 'none';
+  form.reset();
 }
 
 // Close If Outside Click
@@ -187,12 +189,12 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
       form.reset();
       status.classList.add('success');
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Merci pour votre message!";
     }
   
     function error() {
       status.classList.add('error');
-      status.innerHTML = "Oops! There was a problem.";
+      status.innerHTML = "Oups! Il y a eu un problème";
     }
   
     // handle the form submission event

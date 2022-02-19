@@ -14,7 +14,7 @@ a{
 }
 /* *************************Barre de navigation (commun à tous)******************************** */
 
-nav{
+.nav{
    display:flex; 
    flex-wrap: wrap;
    justify-content: space-between;
@@ -24,36 +24,40 @@ nav{
    top: 0;
    z-index:98;
 }
-nav .profil{
+.nav .profil{
     display:flex;
     align-items: center;
 }
-nav .profil img{
+.nav .profil img{
     margin-top: 3px;
     margin-bottom: 3px;
     width: 40px;
     height: 40px;
     border-radius: 20%;
 }
-nav .profil h1{
+.nav .profil h1{
     font-size:15px;
     margin-left: 10px;
 }
-nav ul{
+.nav ul{
     display: flex;
     list-style-type: none;
 }
-nav ul li{
+.nav ul li{
     margin-left: 40px;
     cursor: pointer;
     border-bottom: 1px solid white;
 }
-nav ul li:hover{
+.nav ul li:hover{
     border-bottom-color: black;
 }
 
-nav a{
+.nav a{
     color: black;
+}
+
+.nav_mobile {
+    display:none;
 }
 
 /* *************************Code commun à toutes les pages******************************** */
@@ -63,9 +67,9 @@ nav a{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
+    width: 92vw;
     text-align: center;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
     color: white;
     line-height: 1.5rem;
     font-family: sans-serif;
@@ -73,10 +77,11 @@ nav a{
     padding: 30px 0px;
 }
 .box h1{
-    color: black;
+    color: lightgrey;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 4vw;
+    line-height: 5vw;
     letter-spacing:5px;
     width:100%;
 }
@@ -188,23 +193,22 @@ nav a{
     justify-content: center;
     font-size:3vw;
     font-weight:bold;
+    color:lightgrey;
     width:100%;
 }
 
-.telephone:hover{
+.telephone a{
+    margin-left: 1vw;
     color:lightgrey;
 }
 .telephone i{
     margin-right:1vw;
 }
 
-.telephone a{
-    margin-left: 1vw;
+.telephone a:hover{
     color: black;
 }
-.telephone a:hover{
-    color: lightgrey;
-}
+
 
 
 /* Accueil : section 1 - Soins et Traitements */
@@ -252,6 +256,7 @@ nav a{
     font-size: 3vh;
     letter-spacing: 0.1vw;
     font-weight: 600;
+    cursor:pointer;
 }
 
 .discover:hover{
@@ -965,23 +970,161 @@ nav a{
 
 /* *************************  AFFICHAGE SUR MOBILE  ******************************** */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     
-    /* html {
-        font-size: 100%;
-    } */
-
     /* barre de navigation sur mobile */
-    nav{
-        justify-content: center;
-    }
-    nav .profil h1{
-        font-size:13px;
-    }
-    nav ul{
+
+    .nav{
         display: none;
     }
+
+    .nav_mobile {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        background-color: white;
+        position: fixed;
+        overflow: hidden;
+        z-index: 97;
+    }
+
+    .nav_bloc {
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .nav_mobile .profil_mobile{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .nav_mobile .profil_mobile img{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20%;
+    }
+
+    .nav_mobile .profil_mobile h1{
+        font-size:13px;
+        margin: 3px 10px 3px 30px;
+    }
+
+    .nav_bloc {
+        padding: 46px 0px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        flex-direction:column;
+      }
+      
+    .nav_bloc ul {
+        list-style-type: none;
+        padding-left:0;
+        text-align:center;
+    }
+      
+    .nav_bloc li {
+        padding: 15px 15px;
+    }
+      
+    .nav_bloc li:hover {
+        text-decoration:underline;
+        cursor: pointer;
+    }
+      
+    .nav_bloc li a {
+         color: black;
+         text-decoration: none;
+    }
     
+    #sidemobile {
+        background: white;
+        border-right:2px solid #f3f6f8;
+        height: 100vh;
+        width: 75px;
+        user-select: none;
+        transform: translateX(-150px);
+        transition: transform 250ms ease-in-out;
+    }
+    
+    input[type="checkbox"]:checked ~ #sidemobile {
+        transform: translateX(0);
+    }
+    input[type="checkbox"]:checked ~ #nav-footer {
+        transform: translateX(0);
+    }
+    
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+      
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 15px;
+        left: 15px;
+        height: 22px;
+        width: 22px;
+    }
+    .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: black;
+    }
+    .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 3px;
+    }
+    .diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+    }
+    .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 3px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 8px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -9px;
+    }
+
     /* Box ScrollMagic : Resizing sur mobile */
     .box h2{
         margin: 5%;

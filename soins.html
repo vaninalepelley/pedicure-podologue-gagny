@@ -23,7 +23,7 @@
     <body>
 
         <!--Barre de navigation-->
-        <nav>
+        <nav class="nav">
             <div class="profil">
                 <img src="images/Vanina.jpg" alt="ID Vanina" />
                 <h1>Vanina Lepelley - Pédicure-Podologue D.E.</h1>
@@ -32,11 +32,32 @@
                 <li> <a href=index.html> Accueil </a></li>
                 <li> <a href=#> Soins </a></li>
                 <li> <a href=rdv.html> Rendez-Vous </a></li>
-                <!-- <li> <a href=cabinet.html> Cabinet </a></li> -->
                 <li> <a href="https://www.facebook.com/podologue.lepelley/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook"></i></a></li>
             </ul>
         </nav>
 
+        <div class="nav_mobile"> 
+            <nav class="nav_bloc">
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidemobile">
+                    <ul>
+                        <li> <a href=index.html> Accueil </a></li>
+                        <li> <a href=#> Soins </a></li>
+                        <li> <a href=rdv.html> Rendez-Vous </a></li>
+                        <li> <a href="https://www.facebook.com/podologue.lepelley/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook"></i></a></li>
+                    </ul> 
+                </div>
+            </nav>
+            <div class="profil_mobile">
+                <h1>Vanina Lepelley - Pédicure-Podologue D.E.</h1>
+                <img src="images/Vanina.jpg" alt="ID Vanina" />
+            </div>
+        </div>
 
         <!--Sommaire-->
         <header>
@@ -63,10 +84,11 @@
                         La pédicurie est un domaine consacré aux soins des pieds. Elle s'occupe donc de pathologies liées à l'hygiène des pieds et des ongles et aux affections de la peau (quelques exemples ci-dessous). <br />
                         <br />
                         Il est fortement conseillé de faire des visites de contrôle une fois par an. Vous devez penser à consulter lorsque : <br />
-                        * Vous ressentez une gêne lors de la marche (n'attendez pas de souffrir !), <br />
-                        * Vous constatez l'apparition de mycoses, verrues, cors aux pieds, <br />
-                        * Vous souffrez au niveau d'un ongle (ongle incarné, déformation, bleu, arrachement)<br />
-                        <br />
+                        <ul>
+                            <li>Vous ressentez une gêne lors de la marche (n'attendez pas de souffrir !), </li>
+                            <li>Vous constatez l'apparition de mycoses, verrues, cors aux pieds, </li>
+                            <li>Vous souffrez au niveau d'un ongle (ongle incarné, déformation, bleu, arrachement)</li>
+                        </ul>
                         </div>
                     <div class="champ">
                         <div class="maladie">
@@ -104,9 +126,10 @@
                         La podologie est la science qui permet de corriger les affections et pathologies du pied, parfois étendues au membre inférieur. Elle s'appuie sur la posturologie pour établir un diagnostic et soulager les douleurs.<br />
                         <br />
                         L'apparition d'une gêne lors de la marche doit automatiquement vous mener à consulter afin de ne pas laisser la/les déformation(s) se rigidifier. Le podologue sera alors amené à vous prescrire et réaliser : <br />
-                        * Des semelles orthopédiques, appareillages spécifiques fabriqués sur mesure afin de corriger une malformation, un déséquilibre lors de la marche.<br />
-                        * Des orthèses d'orteils ou orthoplasties, amovibles, sur mesure, et destinées à traiter les déformations réductibles et leurs conséquences.<br />
-                        <br />
+                        <ul>
+                            <li>Des semelles orthopédiques, appareillages spécifiques fabriqués sur mesure afin de corriger une malformation, un déséquilibre lors de la marche,</li>
+                            <li>Des orthèses d'orteils ou orthoplasties, amovibles, sur mesure, et destinées à traiter les déformations réductibles et leurs conséquences.</li>
+                        </ul>
                     </div>
                     <div class="champ">
                         <div class="orthese">
@@ -132,10 +155,11 @@
                         La réflexologie plantaire est une méthode de massage et d’acupression de zones réflexes situées au niveau des pieds. La réflexologie plantaire, bien que ses effets thérapeutiques sont encore non prouvés scientifiquement, est une méthode qui met en relation les terminaisons nerveuses des pieds, recensés au nombre de 7200, avec les organes. Chaque zone régule un organe, un système, un membre ou une fonction. Elle déclenche ainsi des réactions d’auto-guérison dans l’ensemble du corps. Elle s’adresse à tous.<br />
                         <br />
                         La réflexologie plantaire est particulièrement recommandée dans trois domaines :<br />
-                        * Agir sur le stress et les tensions,<br />
-                        * Diminuer certains maux du quotidien : douleurs dorsales, cervicales, maux de tête et syndrome prémenstruel,<br />
-                        * Améliorer la qualité de vie.<br />
-                        <br />
+                        <ul>
+                            <li>Agir sur le stress et les tensions,</li>
+                            <li>Diminuer certains maux du quotidien : douleurs dorsales, cervicales, maux de tête et syndrome prémenstruel,</li>
+                            <li>Améliorer la qualité de vie.</li>
+                        </ul>
                     </div>
                     <div class="champ">
                         <div class="reflexo">
@@ -187,7 +211,7 @@
         <footer>
             <div class="footer">
                 <div class="Copyright">
-                    © LEPELLEY 2022 v1.01
+                    © LEPELLEY 2022 v1.02
                 </div>
                 <div class="Legal">
                     <span id="modal-mentions-legales" class="mentions"> mentions légales</span>

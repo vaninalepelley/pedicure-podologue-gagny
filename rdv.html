@@ -21,7 +21,7 @@
     <body>
 
         <!--Barre de navigation-->
-        <nav>
+        <nav class="nav">
             <div class="profil">
                 <img src="images/Vanina.jpg" alt="ID Vanina" />
                 <h1>Vanina Lepelley - Pédicure-Podologue D.E.</h1>
@@ -30,11 +30,33 @@
                 <li> <a href=index.html> Accueil </a></li>
                 <li> <a href=soins.html>Soins</a></li>
                 <li> <a href=#> Rendez-Vous </a></li>
-                <!-- <li> <a href=cabinet.html> Cabinet </a></li> -->
                 <li> <a href="https://www.facebook.com/podologue.lepelley/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook"></i></a></li>
             </ul>
         </nav>
         
+        <div class="nav_mobile"> 
+            <nav class="nav_bloc">
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidemobile">
+                    <ul>
+                        <li> <a href=index.html> Accueil </a></li>
+                        <li> <a href=soins.html>Soins</a></li>
+                        <li> <a href=#> Rendez-Vous </a></li>
+                        <li> <a href="https://www.facebook.com/podologue.lepelley/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook"></i></a></li>
+                    </ul> 
+                </div>
+            </nav>
+            <div class="profil_mobile">
+                <h1>Vanina Lepelley - Pédicure-Podologue D.E.</h1>
+                <img src="images/Vanina.jpg" alt="ID Vanina" />
+            </div>
+        </div>
+
         <!--Sommaire-->
         <header>
             <div class="rdv_sommaire">
@@ -135,7 +157,7 @@
                                 Infos pratiques: <br />
                                 <ul>
                                     <li>Le cabinet accepte la Carte Vitale </li>
-                                    <li>Le cabinet dispose d'une rampe d'Accès Handicap </li>
+                                    <li>Rampe d'Accès Handicap au cabinet </li>
                                     <li>Pas de paiement par carte de crédit!</li>
                                     <li>Pour les bilans podologiques, se munir de son ordonnance, des résultats d'examens complémentaires (radio, IRM), et de chaussures très usées</li>
 		                        </ul>
@@ -154,7 +176,7 @@
         <footer>
             <div class="footer">
                 <div class="Copyright">
-                    © LEPELLEY 2022 v1.00
+                    © LEPELLEY 2022 v1.02
                 </div>
                 <div class="Legal">
                     <span id="modal-mentions-legales" class="mentions"> mentions légales</span>

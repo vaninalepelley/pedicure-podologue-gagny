@@ -1,8 +1,28 @@
 webmaster: LEPELLEY
 
 
+(V1.03)
+
+
+
+*******************************
+
+V1.02
+* Version mobile de la barre de navigation avec sub-nav
+* <header> ajout de meta <og> des réseaux sociaux
+* <header> ajout de meta <author> webmaster
+* CSS Correctifs mineurs sur le format des bullet points
+* Correctifs vus par https://validator.w3.org
+* <formulaire contact> traduction de "thanks" et "oops" en français
+* <formulaire contact> reset du formulaire en cas de fermeture du pop-up
+
+
+*******************************
+
+
+
 V1.01
-* Ajout de formulaire de contact
+* Ajout de formulaire de contact (formspree.io)
 * Correctifs mineurs vue mobile responsive
 * Mise à jour CGU 1.01 avec adresse du site et hébergeur(vaninalepelley.github.io/pedicure-podologue-gagny)
 
@@ -19,7 +39,10 @@ Initial release of website "cabinet de podologie à Gagny - Vanina Lepelley"
 
 *******************************
 
-Cahier des Charges
-Static site (html/css/js, no php/mySQL)
-Public site
-Protected from spam
+Cahier des Charges:
+Site vitrine 
+Info patientèle podologie
+Formulaire de contact <50 / mois
+Lien page facebook pro
+Hébergement Gratuit
+Intérêt pédagogique Webmaster : Site statique (html/css/js, no php/mySQL), ScrollMagic
